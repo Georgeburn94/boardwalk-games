@@ -1,7 +1,20 @@
-body {
-    font-family: "Inter", sans-serif;
+/* Global Rules */
+
+/* CSS Variables */
+
+:root {
+    --primary-font:"Inter", sans-serif;
+    --secondary-font:"Macondo", cursive;
+    --primary-color:#416a8e;  /* blue */
 }
 
-h1 {
-    font-family: "Macondo";
+body {
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
