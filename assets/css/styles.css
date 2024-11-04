@@ -3,9 +3,16 @@
 /* CSS Variables */
 
 :root {
-    --primary-font:"Inter", sans-serif;
-    --secondary-font:"Macondo", cursive;
-    --primary-color:#416a8e;  /* blue */
+    --primary-font:"Inter", sans-serif; /* body font */
+    --secondary-font:"Macondo", cursive; /* headings */
+    --primary-color:#416a8e;  /* primary color */
+    --secondary-color:#aa5981; /* secondary color */
+    --highlight-color:#416a8e;
+    --light-highlight-color:#7a9fc2;
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
 }
 
 body {
@@ -17,4 +24,16 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+}
+
+/* grid visualisation CSS for testing */
+
+.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
